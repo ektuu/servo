@@ -40,7 +40,7 @@ impl AudioTrack {
             label: label.into(),
             language: language.into(),
             enabled: Cell::new(false),
-            track_list: DomRefCell::new(track_list.map(|t| Dom::from_ref(t))),
+            track_list: DomRefCell::new(track_list.map(Dom::from_ref)),
         }
     }
 
